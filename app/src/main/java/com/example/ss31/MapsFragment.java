@@ -61,8 +61,8 @@ public class MapsFragment extends Fragment {
             } else {
 
                 //Toast.makeText(getContext(), "ts", Toast.LENGTH_SHORT).show();
-                lat = "28";
-                lon = "77";
+                lat = "17.4351";
+                lon = "78.3407";
             }
 
             LatLng sydney = new LatLng(Double.parseDouble(lat), Double.parseDouble(lon));
@@ -126,6 +126,7 @@ public class MapsFragment extends Fragment {
                 Bundle bundle = new Bundle();
                 bundle.putString("latitude", lat);
                 bundle.putString("longitude", lon);
+                bundle.putString("map","true");
 
                 FragmentManager m = getActivity().getSupportFragmentManager();
                 FragmentTransaction t = m.beginTransaction();

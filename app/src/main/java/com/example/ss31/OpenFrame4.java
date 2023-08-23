@@ -64,6 +64,7 @@ public class OpenFrame4 extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_open_frame4, container, false);
 
+        Bundle b = getArguments();
         TextView hindi = v.findViewById(R.id.hindi);
         TextView english = v.findViewById(R.id.english);
         TextView guest = v.findViewById(R.id.guest);
@@ -102,7 +103,9 @@ public class OpenFrame4 extends Fragment {
                 if(h[0] ==true || e[0] ==true)
                 {
                     Intent i = new Intent(getContext(), MainActivity.class);
-                    //i.putExtra("bundle", bundle);
+                    b.putString("hindi",h[0]+"");
+                    b.putString("english",e[0]+"");
+                    i.putExtra("bundle", b);
                     startActivity(i);
                 }
             }

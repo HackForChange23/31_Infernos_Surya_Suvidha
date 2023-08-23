@@ -1172,10 +1172,6 @@
                             tools:text="100\nunits/year" />
 
 
-
-
-
-
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <TextView

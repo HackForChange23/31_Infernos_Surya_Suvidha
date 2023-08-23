@@ -73,16 +73,17 @@ public class OpenFrame3 extends Fragment {
         TextView lattxt = (TextView) v.findViewById(R.id.lat);
         TextView lontxt = (TextView) v.findViewById(R.id.lon);
 
-        if(getArguments()!=null)
+        if(getArguments()!=null && bundle.getString("map").equals("true"))
         {
             lattxt.setText(bundle.getString("latitude").substring(0,9));
             lontxt.setText(bundle.getString("longitude").substring(0,9));
-
         }
 
         FragmentManager m = getActivity().getSupportFragmentManager();
         FragmentTransaction t = m.beginTransaction();
         Fragment frame = new MapsFragment();
+        bundle.putString("latitude", "17.4351");
+        bundle.putString("longitude", "78.3407");
         frame.setArguments(bundle);
         t.replace(R.id.mapframe, frame);
         t.commit();

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dialog">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/background_chatbot">
+
+        <RelativeLayout
+            android:id="@+id/data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="30dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bot_dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/background_chatbot_dp" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="6dp"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/back"
+                    app:layout_constraintEnd_toEndOf="@+id/back"
+                    app:layout_constraintStart_toStartOf="@+id/back"
+                    app:layout_constraintTop_toTopOf="@+id/back"
+                    app:srcCompat="@drawable/farmer" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/bot_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/bot_dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Kisan Sahayak"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bot_name"
+                android:layout_marginTop="-8dp"
+                android:layout_toRightOf="@id/bot_dp"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:src="@drawable/vec_bot_status" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bot_name"
+                android:layout_marginLeft="-2dp"
+                android:layout_marginTop="-5dp"
+                android:layout_toRightOf="@id/status"
+                android:text="Always active"
+                android:textSize="12sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/bot_options"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/background_button_outlined" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/vec_more"
+                    app:layout_constraintBottom_toBottomOf="@+id/bot_options"
+                    app:layout_constraintEnd_toEndOf="@+id/bot_options"
+                    app:layout_constraintStart_toStartOf="@+id/bot_options"
+                    app:layout_constraintTop_toTopOf="@+id/bot_options" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/msgs_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/data"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="110dp"
+            android:orientation="vertical"/>
+
+        <LinearLayout
+            android:id="@+id/msg_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="-110dp"
+            android:layout_below="@id/msgs_recycler">
+
+            <EditText
+                android:id="@+id/editTextMessage"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Type a message..."
+                android:drawableEnd="@drawable/vec_voice"
+                android:background="@drawable/background_edittext"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#9B9A9A"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_weight="4.2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/bot_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/background_button_outlined_blue" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/sendbtn"
+                    android:padding="10dp"
+                    android:src="@drawable/vec_send_button"
+                    app:layout_constraintBottom_toBottomOf="@+id/bot_send"
+                    app:layout_constraintEnd_toEndOf="@+id/bot_send"
+                    app:layout_constraintStart_toStartOf="@+id/bot_send"
+                    app:layout_constraintTop_toTopOf="@+id/bot_send" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vec_cancel"
+        app:tint="@color/white"
+        app:borderWidth="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/container"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/primary_blue"/>
+</RelativeLayout>
+
+

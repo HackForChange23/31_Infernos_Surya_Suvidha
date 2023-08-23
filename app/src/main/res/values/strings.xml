@@ -43,4 +43,10 @@
     <string name="calculate">Calculate</string>
     <string name="results">Results</string>
     <string name="user_name">Kisan Raj</string>
+    <string name="mssg1">Hello my name is Kisaan Sahayak, how may I help you?</string>
+    <string name="mssg2">Can you help me knowing about organic farming?</string>
+    <string name="mssg3">Sure!</string>
+    <string name="mssg4">Organic Farming is a type of farming which consumes 0 percentage of chemicals</string>
+    <string name="mssg5">Great</string>
+
 </resources>

@@ -17,9 +17,9 @@
     <string name="soil_type">Soil Type:  (Clay, Loam, Sandy)</string>
     <string name="soil_pH">Soil pH level</string>
     <string name="fasal_desc">Fasal Description</string>
-    <string name="soil_nutrient">Soil Nutrient You Use</string>
+    <string name="soil_nutrient">Soil Nutrient Used</string>
     <string name="nitrogen">Nitrogen(N)</string>
-    <string name="phosphorus">Phosphorus(P)</string>
+    <string name="phosphorus">Phospho(P)</string>
     <string name="sulphur">Sulphur(S)</string>
     <string name="manganese">Manganese(Mn)</string>
     <string name="potassium">Potassium(K)</string>
@@ -43,4 +43,7 @@
     <string name="calculate">Calculate</string>
     <string name="results">Results</string>
     <string name="user_name">Kisan Raj</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="rainfall">Rainfall</string>
 </resources>

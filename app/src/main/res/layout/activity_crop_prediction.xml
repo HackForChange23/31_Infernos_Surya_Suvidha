@@ -44,61 +44,6 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_below="@id/fasal_head"
-            android:id="@+id/edittextjob_title"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/fasal_name"
-            app:boxBackgroundColor="#1A5265FF"
-            android:layout_margin="20dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                android:textSize="15dp" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_below="@id/edittextjob_title"
-            android:id="@+id/edittext_orgs_container"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/fasal_type"
-            app:boxBackgroundColor="#1A5265FF"
-            android:layout_marginHorizontal="20dp">
-
-            <AutoCompleteTextView
-                android:id="@+id/edittext_orgs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="none"/>
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/soiltype"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/soil_type"
-            app:boxBackgroundColor="#1A5265FF"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                android:textSize="15dp" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/soilpH"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
             android:layout_width="match_parent"
@@ -118,18 +63,53 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/edittext_description"
+            android:id="@+id/nitrogen"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
-            android:background="#1A5265FF"
-            android:hint="@string/fasal_desc"
+            android:layout_height="wrap_content"
+            android:hint="@string/nitrogen"
             app:boxBackgroundColor="#1A5265FF"
-            app:boxStrokeWidth="0dp">
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phosphorus"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phosphorus"
+            app:boxBackgroundColor="#1A5265FF"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/potassium"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/potassium"
+            app:boxBackgroundColor="#1A5265FF"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -199,89 +179,150 @@
 
         <!--        </com.google.android.material.textfield.TextInputLayout>-->
 
-        <RelativeLayout
-            android:id="@+id/skills_container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:background="#1A5265FF"
-            android:padding="10dp">
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/skills_container"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="20dp"-->
+<!--            android:background="#1A5265FF"-->
+<!--            android:padding="10dp">-->
 
-            <TextView
-                android:id="@+id/skills_input"
-                android:layout_marginLeft="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/soil_nutrient"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/black"
-                android:textSize="17sp"/>
+<!--            <TextView-->
+<!--                android:id="@+id/skills_input"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/soil_nutrient"-->
+<!--                android:fontFamily="@font/poppins_medium"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="17sp"/>-->
 
-            <com.google.android.material.checkbox.MaterialCheckBox
-                android:id="@+id/checkBox_creative"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/skills_input"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="7"
-                android:text="@string/nitrogen"
-                app:buttonTint="#805265FF"/>
+<!--            <LinearLayout-->
+<!--                android:layout_below="@id/skills_input"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="8dp"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
 
-            <com.google.android.material.checkbox.MaterialCheckBox
-                android:layout_toRightOf="@id/checkBox_creative"
-                android:id="@+id/checkBox_comm"
-                android:layout_marginLeft="5dp"
-                android:layout_below="@id/skills_input"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="7"
-                android:text="@string/phosphorus"
-                app:buttonTint="#805265FF"/>
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/nitrogen"-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"-->
+<!--                    android:layout_width="110dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="@string/nitrogen"-->
+<!--                    app:boxBackgroundColor="#1A5265FF"-->
+<!--                    android:layout_margin="8dp">-->
 
-            <com.google.android.material.checkbox.MaterialCheckBox
-                android:layout_toRightOf="@id/checkBox_comm"
-                android:id="@+id/checkBox_commerce"
-                android:layout_marginLeft="5dp"
-                android:layout_below="@id/skills_input"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="7"
-                android:text="@string/sulphur"
-                app:buttonTint="#805265FF"/>
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/poppins"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textSize="10dp" />-->
 
-            <com.google.android.material.checkbox.MaterialCheckBox
-                android:id="@+id/checkBox_organization"
-                android:layout_marginLeft="5dp"
-                android:layout_below="@id/checkBox_creative"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="7"
-                android:text="@string/manganese"
-                app:buttonTint="#805265FF"/>
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/phosphorus"-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"-->
+<!--                    android:layout_width="120dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="@string/phosphorus"-->
+<!--                    app:boxBackgroundColor="#1A5265FF"-->
+<!--                    android:layout_margin="8dp">-->
 
-            <com.google.android.material.checkbox.MaterialCheckBox
-                android:id="@+id/checkBox_artist"
-                android:layout_marginLeft="5dp"
-                android:layout_below="@id/checkBox_creative"
-                android:layout_toRightOf="@id/checkBox_organization"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="7"
-                android:text="@string/potassium"
-                app:buttonTint="#805265FF"/>
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/poppins"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textSize="10dp" />-->
 
-            <com.google.android.material.checkbox.MaterialCheckBox
-                android:id="@+id/checkBox_ps"
-                android:layout_marginLeft="5dp"
-                android:layout_below="@id/checkBox_creative"
-                android:layout_toRightOf="@id/checkBox_artist"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="7"
-                android:text="@string/copper"
-                app:buttonTint="#805265FF"/>
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/potassium"-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"-->
+<!--                    android:layout_width="116dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="@string/potassium"-->
+<!--                    app:boxBackgroundColor="#1A5265FF"-->
+<!--                    android:layout_margin="8dp">-->
 
-        </RelativeLayout>
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:fontFamily="@font/poppins"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textSize="10dp" />-->
+
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+<!--            </LinearLayout>-->
+
+<!--&lt;!&ndash;            <com.google.android.material.checkbox.MaterialCheckBox&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/checkBox_creative"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_below="@id/skills_input"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_weight="7"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="@string/nitrogen"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:buttonTint="#805265FF"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <com.google.android.material.checkbox.MaterialCheckBox&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_toRightOf="@id/checkBox_creative"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/checkBox_comm"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_below="@id/skills_input"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_weight="7"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="@string/phosphorus"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:buttonTint="#805265FF"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <com.google.android.material.checkbox.MaterialCheckBox&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_toRightOf="@id/checkBox_comm"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/checkBox_commerce"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_below="@id/skills_input"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_weight="7"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="@string/sulphur"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:buttonTint="#805265FF"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <com.google.android.material.checkbox.MaterialCheckBox&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/checkBox_organization"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_below="@id/checkBox_creative"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_weight="7"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="@string/manganese"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:buttonTint="#805265FF"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <com.google.android.material.checkbox.MaterialCheckBox&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/checkBox_artist"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_below="@id/checkBox_creative"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_toRightOf="@id/checkBox_organization"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_weight="7"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="@string/potassium"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:buttonTint="#805265FF"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <com.google.android.material.checkbox.MaterialCheckBox&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/checkBox_ps"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginLeft="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_below="@id/checkBox_creative"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_toRightOf="@id/checkBox_artist"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_weight="7"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="@string/copper"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:buttonTint="#805265FF"/>&ndash;&gt;-->
+
+<!--        </RelativeLayout>-->
 
         <!--        <TextView-->
         <!--            android:id="@+id/contact"-->
@@ -315,6 +356,52 @@
 
         <!--        </com.google.android.material.textfield.TextInputLayout>-->
 
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Opt Solar"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/poppins"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="No" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RadioGroup>
+
         <androidx.cardview.widget.CardView
             android:layout_marginTop="10dp"
             android:id="@+id/submitbtn"
@@ -342,6 +429,7 @@
                     android:textSize="17sp" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
+
         <!--        <EditText-->
         <!--            android:id="@+id/editText_gigname"-->
         <!--            android:layout_below="@id/gig"-->

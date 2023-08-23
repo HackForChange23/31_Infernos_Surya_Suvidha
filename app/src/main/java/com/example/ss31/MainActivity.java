@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         homebtn.setImageResource(R.drawable.homecolor);
         FragmentManager m = getSupportFragmentManager();
         FragmentTransaction t = m.beginTransaction();
-        Fragment Home = new home();
+        Fragment Home = new FeedFragment();
         t.replace(R.id.fragment, Home);
         t.commit();
 
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 userbtn.setImageResource(R.drawable.user);
                 FragmentManager m = getSupportFragmentManager();
                 FragmentTransaction t = m.beginTransaction();
-                Fragment home = new home();
+                Fragment home = new FeedFragment();
                 home.setArguments(bundle);
                 t.replace(R.id.fragment, home);
                 t.commit();

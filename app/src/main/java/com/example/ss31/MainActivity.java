@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         homebtn = (ImageView) findViewById(R.id.homebtn);
         solarbtn = (ImageView) findViewById(R.id.solarbtn);
-        fasalbtn = (ImageView) findViewById(R.id.fasalbtn);
+//        fasalbtn = (ImageView) findViewById(R.id.fasalbtn);
         notificationbtn = (ImageView) findViewById(R.id.notificationbtn);
         userbtn = (ImageView) findViewById(R.id.userbtn);
 
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 solarbtn.setImageResource(R.drawable.sunfill);
                 homebtn.setImageResource(R.drawable.homecolor);
 //                windbtn.setImageResource(R.drawable.windmill);
-                fasalbtn.setImageResource(R.drawable.crop_outline);
+//                fasalbtn.setImageResource(R.drawable.crop_outline);
                 notificationbtn.setImageResource(R.drawable.notification);
                 userbtn.setImageResource(R.drawable.user);
                 FragmentManager m = getSupportFragmentManager();
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 solarbtn.setImageResource(R.drawable.sunimg);
                 homebtn.setImageResource(R.drawable.explore);
 //                windbtn.setImageResource(R.drawable.windmill);
-                fasalbtn.setImageResource(R.drawable.crop_outline);
+//                fasalbtn.setImageResource(R.drawable.crop_outline);
                 notificationbtn.setImageResource(R.drawable.notification);
                 userbtn.setImageResource(R.drawable.user);
                 FragmentManager m = getSupportFragmentManager();
@@ -76,21 +76,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        fasalbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                solarbtn.setImageResource(R.drawable.sunfill);
-                homebtn.setImageResource(R.drawable.explore);
-                fasalbtn.setImageResource(R.drawable.rice);
-                notificationbtn.setImageResource(R.drawable.notification);
-                userbtn.setImageResource(R.drawable.user);
-                FragmentManager m = getSupportFragmentManager();
-                FragmentTransaction t = m.beginTransaction();
-                Fragment solar = new fasal_management();
-                t.replace(R.id.fragment, solar);
-                t.commit();
-            }
-        });
+//        fasalbtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                solarbtn.setImageResource(R.drawable.sunfill);
+//                homebtn.setImageResource(R.drawable.explore);
+//                fasalbtn.setImageResource(R.drawable.rice);
+//                notificationbtn.setImageResource(R.drawable.notification);
+//                userbtn.setImageResource(R.drawable.user);
+//                FragmentManager m = getSupportFragmentManager();
+//                FragmentTransaction t = m.beginTransaction();
+//                Fragment solar = new fasal_management();
+//                t.replace(R.id.fragment, solar);
+//                t.commit();
+//            }
+//        });
 
 
         notificationbtn.setOnClickListener(new View.OnClickListener() {
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 solarbtn.setImageResource(R.drawable.sunfill);
                 homebtn.setImageResource(R.drawable.explore);
-                fasalbtn.setImageResource(R.drawable.crop_outline);
+//                fasalbtn.setImageResource(R.drawable.crop_outline);
                 notificationbtn.setImageResource(R.drawable.notificationcolor);
                 userbtn.setImageResource(R.drawable.user);
                 FragmentManager m = getSupportFragmentManager();
@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 solarbtn.setImageResource(R.drawable.sunfill);
                 homebtn.setImageResource(R.drawable.explore);
-                fasalbtn.setImageResource(R.drawable.crop_outline);
+//                fasalbtn.setImageResource(R.drawable.crop_outline);
                 notificationbtn.setImageResource(R.drawable.notification);
                 userbtn.setImageResource(R.drawable.usercolor);
                 FragmentManager m = getSupportFragmentManager();

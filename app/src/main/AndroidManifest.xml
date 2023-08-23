@@ -13,6 +13,9 @@
         android:theme="@style/Theme.SS31"
         tools:targetApi="31">
         <activity
+            android:name=".Fertilizer_Calculator"
+            android:exported="false" />
+        <activity
             android:name=".Fasal_Activity"
             android:exported="false" />
         <activity

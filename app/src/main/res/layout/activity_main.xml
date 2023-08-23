@@ -95,30 +95,7 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-            <ImageView
-                android:id="@+id/fasalbtn"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:padding="4dp"
-                android:src="@drawable/crop_outline" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Fasal"
-                android:layout_gravity="center"
-                android:textSize="12sp"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:fontFamily="@font/oxygen"/>
-
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"

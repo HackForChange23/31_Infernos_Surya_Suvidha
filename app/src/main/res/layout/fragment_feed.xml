@@ -92,6 +92,36 @@
                         android:textSize="18sp"
                         android:textStyle="bold"/>
 
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/fasal_kyc"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#00FFFFFF"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="#60CBFB"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fasal_kyc"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/oxygen"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
                 </LinearLayout>
 
                 <LinearLayout

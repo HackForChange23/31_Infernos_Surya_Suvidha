@@ -1,8 +1,10 @@
 package com.example.ss31;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -23,6 +25,7 @@ import java.util.ArrayList;
  */
 public class FeedFragment extends Fragment {
 
+    CardView fasalKYC;
     Context context;
     public FeedFragment(Context context){
         this.context = context;
@@ -137,6 +140,14 @@ public class FeedFragment extends Fragment {
 //        }
 
 
+        fasalKYC = view.findViewById(R.id.fasal_kyc);
+        fasalKYC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getContext(),Crop_Prediction.class);
+                startActivity(i);
+            }
+        });
         return  view;
     }
 }

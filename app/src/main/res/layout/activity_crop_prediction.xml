@@ -33,7 +33,7 @@
                 android:id="@+id/crop_prediction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/fasal_gyan"
+                android:text="@string/fasal_kyc"
                 android:fontFamily="@font/poppins_semibold"
                 android:textSize="22sp"
                 android:textColor="@color/black"

@@ -77,29 +77,21 @@ public class FeedFragment extends Fragment {
         // Inflate the layout for this fragment
         RecyclerView recyclerView = view.findViewById(R.id.posts_recycler);
         ArrayList<Post> arrayListPost = new ArrayList<>();
-        arrayListPost.add(new Post(1,1,1,1,1,"#AzadikaAmritMahotsav #nashamukt #drugawareness","https://firebasestorage.googleapis.com/v0/b/mukt---drug-free-india.appspot.com/o/images%2Fpost5.jpg?alt=media&token=a0edf946-a449-4c7c-b5eb-ec7627cecf31",
+        arrayListPost.add(new Post(1,1,1,1,1,"#AzadikaAmritMahotsav #Farmer #kisaan","https://firebasestorage.googleapis.com/v0/b/ss31-c21a4.appspot.com/o/Screenshot%201945-06-01%20at%204.07.35%20PM.png?alt=media&token=cf334985-9218-4736-a140-bdede37cc035",
                 "Tejash Seth","15th August","03:52 hrs"));
 
-        arrayListPost.add(new Post(1,1,1,1,1,"#AzadikaAmritMahotsav #nashamukt #drugawareness","https://firebasestorage.googleapis.com/v0/b/mukt---drug-free-india.appspot.com/o/images%2Fpost2.png?alt=media&token=75429583-e55e-4a40-aba3-7cc85f875491",
+        arrayListPost.add(new Post(1,1,1,1,1,"#AzadikaAmritMahotsav #soil #kisaan","https://firebasestorage.googleapis.com/v0/b/ss31-c21a4.appspot.com/o/Screenshot%201945-06-01%20at%204.09.22%20PM.png?alt=media&token=d23152a1-eb75-4578-9f42-9c68a99a932c",
                 "Ayush Dubey","18th August","13:53 hrs"));
 
-        arrayListPost.add(new Post(1,1,1,1,1,"#AzadikaAmritMahotsav #nashamukt #drugawareness","https://firebasestorage.googleapis.com/v0/b/mukt---drug-free-india.appspot.com/o/images%2Fpost3.jpg?alt=media&token=a6901df5-323e-41fe-a6c9-0cb2b2cfdca8",
+        arrayListPost.add(new Post(1,1,1,1,1,"#AzadikaAmritMahotsav #soil #kisaan","https://firebasestorage.googleapis.com/v0/b/ss31-c21a4.appspot.com/o/Screenshot%201945-06-01%20at%204.13.49%20PM.png?alt=media&token=de2a8c10-d293-420d-9f1d-faf4f34f2d83",
                 "Soumen Paul","22nd August","09:05 hrs"));
 
-        arrayListPost.add(new Post(1,1,1,1,1,"#AzadikaAmritMahotsav #nashamukt #drugawareness","https://firebasestorage.googleapis.com/v0/b/mukt---drug-free-india.appspot.com/o/images%2Fpost4.jpg?alt=media&token=bc5d78b4-46e7-4a74-ba16-5020b87e25aa",
+        arrayListPost.add(new Post(1,1,1,1,1,"#AzadikaAmritMahotsav #soil #kisaan","https://firebasestorage.googleapis.com/v0/b/ss31-c21a4.appspot.com/o/Screenshot%201945-06-01%20at%204.14.20%20PM.png?alt=media&token=aa139d5b-8e0e-49b8-a7a6-e0161294dd25",
                 "Kritish Shukla","23rd August","16:13 hrs"));
 
-        arrayListPost.add(new Post(1,1,1,1,1,"#AzadikaAmritMahotsav #nashamukt #drugawareness","https://firebasestorage.googleapis.com/v0/b/mukt---drug-free-india.appspot.com/o/images%2Fpost1.jpg?alt=media&token=862e04fc-0d08-4047-ac4e-4d53cb09dad7",
+        arrayListPost.add(new Post(1,1,1,1,1,"#AzadikaAmritMahotsav #soil #kisaan","https://firebasestorage.googleapis.com/v0/b/ss31-c21a4.appspot.com/o/Screenshot%201945-06-01%20at%204.15.34%20PM.png?alt=media&token=52773d29-ffcc-4b8b-9bde-1a947ee81ac0",
                 "Unnati Bhardwaj","20th August","12:01 hrs"));
 
-        arrayListPost.add(new Post(1,1,1,1,1,"#AzadikaAmritMahotsav #nashamukt #drugawareness","https://firebasestorage.googleapis.com/v0/b/mukt---drug-free-india.appspot.com/o/images%2Fpost6.jpg?alt=media&token=be6d676c-d917-45c5-be5b-dd7e1cdf650a",
-                "Aman Shrivastava","26th August","11:38 hrs"));
-
-        arrayListPost.add(new Post(1,1,1,1,1,"#AzadikaAmritMahotsav #nashamukt #drugawareness","https://firebasestorage.googleapis.com/v0/b/mukt---drug-free-india.appspot.com/o/images%2Fpost8.jpg?alt=media&token=af3f25fb-0148-4584-b708-bc4af1bacf97",
-                "Sahil Saxena","21st August","17:15 hrs"));
-
-        arrayListPost.add(new Post(1,1,1,1,1,"#AzadikaAmritMahotsav #nashamukt #drugawareness","https://firebasestorage.googleapis.com/v0/b/mukt---drug-free-india.appspot.com/o/images%2Fpost7.jpg?alt=media&token=9bd2c843-8701-4b16-95e6-65fd8b24688f",
-                "Akash Patel","28th August","10:34 hrs"));
 
 
         PostAdapter postAdapter = new PostAdapter(context,arrayListPost);

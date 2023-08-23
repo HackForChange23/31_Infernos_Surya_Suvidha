@@ -1,7 +1,3 @@
-# !pip install langchain
-# !pip install google-search-results
-# !pip install openai
-
 from langchain.agents import ZeroShotAgent, Tool, AgentExecutor
 from langchain import OpenAI, SerpAPIWrapper, LLMChain
 from serpapi import GoogleSearch
@@ -9,12 +5,11 @@ import openai
 from keybert import KeyBERT
 import os
 
-os.environ['OPENAI_API_KEY']='YOUR_OPENAI_KEY'
-os.environ['SERPAPI_API_KEY'] = 'YOUR_API_KEY'
+os.environ['OPENAI_API_KEY']='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'
+os.environ['SERPAPI_API_KEY'] = '6dd78a0d4254c44405ce2d2ed36bdb32bcbd6eca6703a0f3d5cfa82f72132422'
 
 
-
-valid_keywords = ["agriculture", "farming", "crop","crops" ,"farmer", "farmers","livestock", "irrigation", "soil", "harvest",
+valid_keywords = ["agriculture", "farming", "crop", "farmer", "livestock", "irrigation", "soil", "harvest",
     "cultivation", "agronomy", "sustainable farming", "organic farming", "crop rotation",
     "pest control", "fertilizers", "agribusiness", "rural development", "agricultural technology",
     "precision farming", "agroforestry", "horticulture", "animal husbandry", "aquaculture",
@@ -33,7 +28,6 @@ invalid_keywords = [
     "fraud", "malware", "virus", "hack", "cheat", "unrelated", "irrelevant", "fake",
     "hoax", "misleading", "deceptive","sex","cricket","football"
 ]
-
 
 map_valid_keywords=map(lambda x:x,valid_keywords)
 map_invalid_keywords=map(lambda x:x,invalid_keywords)
@@ -62,9 +56,6 @@ prompt = ZeroShotAgent.create_prompt(
 )
 
 
-# print(prompt.template)
-
-
 def check_validity(message):
     kw_model = KeyBERT()
     keywords = kw_model.extract_keywords(message)
@@ -83,23 +74,22 @@ def check_validity(message):
     
     if(invalid_count):
         return False
-    if(valid_count>=2):
+    if(valid_count>=0):
         return True
 
 
 
 
 
-
-while True:
-    message=input("")
+def create_chatbot_executor(message):
     if(check_validity(message)):
         # print("Valid question")
         llm_chain = LLMChain(llm=OpenAI(temperature=0), prompt=prompt)
         tool_names = [tool.name for tool in tools]
         agent = ZeroShotAgent(llm_chain=llm_chain, allowed_tools=tool_names)
         agent_executor = AgentExecutor.from_agent_and_tools(agent=agent, tools=tools, verbose=True)
-        agent_executor.run(message)
+        result=agent_executor.run(message)
+        return result
     else:
         print("This is the invalid question")
 

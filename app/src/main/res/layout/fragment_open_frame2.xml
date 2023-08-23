@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E636E"
+    tools:context=".OpenFrame2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/splashsolar"
+            android:scaleType="centerCrop"
+            android:layout_weight="2"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.6"
+            android:background="#1E636E"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Put your good name and opt renewable with us"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.3"
+                android:layout_gravity="center"
+                android:hint="Enter Mobile No"
+                android:textColorHint="@color/white"
+                android:gravity="center"
+                android:textColorHighlight="@color/white"
+                android:id="@+id/nameedtxt"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/white"
+
+                />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.3"
+                android:layout_gravity="center"
+                android:hint="Enter OTP"
+                android:textColorHint="@color/white"
+                android:gravity="center"
+                android:textColorHighlight="@color/white"
+                android:id="@+id/otptxt"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/white"
+
+                />
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Next"
+                android:id="@+id/Nextbtn"
+                android:background="@drawable/whitecircle"
+                android:textColor="#022B32"
+                android:textSize="17sp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="#1E636E"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/markframe1"
+                android:background="@drawable/orangecircle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:id="@+id/markframe2"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/whitecircle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:layout_gravity="center"
+                android:id="@+id/markframe3"
+                android:layout_weight="1"
+                android:background="@drawable/whitecircle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/markframe5"
+                android:background="@drawable/whitecircle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/markframe4"
+                android:background="@drawable/whitecircle"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

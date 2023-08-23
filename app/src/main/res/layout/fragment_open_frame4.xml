@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F3B8E8EF"
+    tools:context="OpenFrame4"
+    tools:ignore="ExtraText">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/login"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#F3B8E8EF"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+
+                android:background="@color/white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/whitecircle"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp">
+
+
+
+            </View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/orangecircle"
+                    android:text="Hindi"
+                    android:layout_margin="10dp"
+                    android:id="@+id/hindi"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+
+                <TextView
+                    android:id="@+id/english"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/orangecircle"
+                    android:text="English"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Continue as guest"
+                    android:textColor="#032429"
+                    android:id="@+id/guest"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="15sp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="#F3B8E8EF"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/markframe1"
+                android:background="@drawable/orangecircle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:id="@+id/markframe2"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/whitecircle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:layout_gravity="center"
+                android:id="@+id/markframe3"
+                android:layout_weight="1"
+                android:background="@drawable/whitecircle"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/markframe5"
+                android:background="@drawable/whitecircle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/markframe4"
+                android:background="@drawable/whitecircle"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text='"Renew energy, Renew India"'
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="#04899E"
+        />
+
+</FrameLayout>

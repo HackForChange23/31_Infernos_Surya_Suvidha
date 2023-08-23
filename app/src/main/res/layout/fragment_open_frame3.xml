@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="OpenFrame3">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mapframe"
+        android:layout_weight="1"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="30dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/whiteborder"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppinss"
+                        android:gravity="center"
+                        android:text="Latitude : "
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/lat"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:layout_weight="1"
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/whiteborder"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="#FFFFFF"
+                        android:text="Longitude : "
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:layout_weight="1"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:id="@+id/lon"
+                        android:layout_weight="1"
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Next"
+                android:id="@+id/Nexttbtn"
+                android:background="@drawable/yellowoutline"
+                android:textColor="#022B32"
+                android:textSize="17sp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/markframe1"
+                android:background="@drawable/orangecircle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:id="@+id/markframe2"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/whitecircle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:layout_gravity="center"
+                android:id="@+id/markframe3"
+                android:layout_weight="1"
+                android:background="@drawable/whitecircle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/markframe5"
+                android:background="@drawable/whitecircle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/markframe4"
+                android:background="@drawable/whitecircle"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</FrameLayout>

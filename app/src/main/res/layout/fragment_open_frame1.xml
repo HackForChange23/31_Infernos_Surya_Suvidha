@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E636E"
+    tools:context=".OpenFrame1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/splashsolar"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.6"
+            android:background="#1E636E"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Make your sun count"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="with"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Vidyut"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="top"
+                    android:textColor="#FFE76C"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/getstartedbtn"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.2"
+                android:background="@drawable/orangecircle"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Get Started"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="#1E636E"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:layout_gravity="center"
+                android:id="@+id/markframe1"
+                android:layout_weight="1"
+                android:background="@drawable/orangecircle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:id="@+id/markframe2"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/whitecircle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:layout_gravity="center"
+                android:id="@+id/markframe3"
+                android:layout_weight="1"
+                android:background="@drawable/whitecircle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/markframe5"
+                android:background="@drawable/whitecircle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="21dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/markframe4"
+                android:background="@drawable/whitecircle"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,7 +1,9 @@
 package com.example.ss31;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -59,6 +61,26 @@ public class fasal_management extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fasal_management, container, false);
+        View view = inflater.inflate(R.layout.fragment_fasal_management, container, false);
+        CardView card_prediction = (CardView) view.findViewById(R.id.crop_prediction_card);
+        card_prediction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), Crop_Prediction.class);
+                startActivity(i);
+            }
+        });
+
+        CardView fertilizer_calculator = (CardView) view.findViewById(R.id.fertilizer_calc_card);
+        fertilizer_calculator.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), Fasal_Activity.class);
+                startActivity(i);
+            }
+        });
+
+
+        return view;
     }
 }

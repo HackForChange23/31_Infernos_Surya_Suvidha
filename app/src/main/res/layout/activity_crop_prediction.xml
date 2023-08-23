@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Crop_Prediction">
+
+    <LinearLayout
+        android:id="@+id/fasal_gyan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/fasal_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/arrow_back" />
+
+            <TextView
+                android:id="@+id/crop_prediction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fasal_gyan"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_below="@id/fasal_head"
+            android:id="@+id/edittextjob_title"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fasal_name"
+            app:boxBackgroundColor="#1A5265FF"
+            android:layout_margin="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_below="@id/edittextjob_title"
+            android:id="@+id/edittext_orgs_container"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fasal_type"
+            app:boxBackgroundColor="#1A5265FF"
+            android:layout_marginHorizontal="20dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/edittext_orgs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/soiltype"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/soil_type"
+            app:boxBackgroundColor="#1A5265FF"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/soilpH"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/soil_pH"
+            app:boxBackgroundColor="#1A5265FF"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edittext_description"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#1A5265FF"
+            android:hint="@string/fasal_desc"
+            app:boxBackgroundColor="#1A5265FF"
+            app:boxStrokeWidth="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/on_or_off"-->
+        <!--            android:layout_marginTop="-10dp"-->
+        <!--            android:layout_below="@id/edittext_description"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <TextView-->
+        <!--                android:layout_weight="7"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="On-site"-->
+        <!--                android:gravity="end"-->
+        <!--                android:layout_gravity="center_vertical"-->
+        <!--                android:fontFamily="@font/poppins_medium"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="15dp"/>-->
+
+        <!--            <androidx.appcompat.widget.SwitchCompat-->
+        <!--                android:id="@+id/switch1"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:layout_gravity="center_vertical"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                app:trackTint="#C6D0D1"-->
+        <!--                app:thumbTint="@color/purple_500"/>-->
+
+        <!--            <TextView-->
+        <!--                android:layout_marginLeft="10dp"-->
+        <!--                android:layout_weight="7"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="Remote"-->
+        <!--                android:layout_gravity="center_vertical"-->
+        <!--                android:fontFamily="@font/poppins_medium"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="15dp"/>-->
+
+
+        <!--        </LinearLayout>-->
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:layout_below="@id/on_or_off"-->
+        <!--            android:id="@+id/edittext_type_contaniner"-->
+        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:hint="Internship/ Full Time/ Part Time"-->
+        <!--            app:boxBackgroundColor="#1A5265FF"-->
+        <!--            android:layout_marginHorizontal="20dp">-->
+
+        <!--            <AutoCompleteTextView-->
+        <!--                android:id="@+id/edittext_type"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:inputType="none"/>-->
+
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/skills_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#1A5265FF"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/skills_input"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/soil_nutrient"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBox_creative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skills_input"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="7"
+                android:text="@string/nitrogen"
+                app:buttonTint="#805265FF"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:layout_toRightOf="@id/checkBox_creative"
+                android:id="@+id/checkBox_comm"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/skills_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="@string/phosphorus"
+                app:buttonTint="#805265FF"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:layout_toRightOf="@id/checkBox_comm"
+                android:id="@+id/checkBox_commerce"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/skills_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="@string/sulphur"
+                app:buttonTint="#805265FF"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBox_organization"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/checkBox_creative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="@string/manganese"
+                app:buttonTint="#805265FF"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBox_artist"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/checkBox_creative"
+                android:layout_toRightOf="@id/checkBox_organization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="@string/potassium"
+                app:buttonTint="#805265FF"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBox_ps"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/checkBox_creative"
+                android:layout_toRightOf="@id/checkBox_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="@string/copper"
+                app:buttonTint="#805265FF"/>
+
+        </RelativeLayout>
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/contact"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/edittext_perks"-->
+        <!--            android:layout_marginHorizontal="20dp"-->
+        <!--            android:fontFamily="@font/poppins_semibold"-->
+        <!--            android:text="Contact details"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="20sp" />-->
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:layout_below="@id/contact"-->
+        <!--            android:id="@+id/edittext_email"-->
+        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:hint="Email"-->
+        <!--            app:boxBackgroundColor="#1A5265FF"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_marginHorizontal="20dp"-->
+        <!--            android:layout_marginBottom="10dp">-->
+
+        <!--            <com.google.android.material.textfield.TextInputEditText-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:textSize="15dp"-->
+        <!--                android:fontFamily="@font/poppins" />-->
+
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:id="@+id/submitbtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginBottom="40dp"
+            android:background="#00FFFFFF"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/purple_500"
+                android:elevation="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <!--        <EditText-->
+        <!--            android:id="@+id/editText_gigname"-->
+        <!--            android:layout_below="@id/gig"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:ems="10"-->
+        <!--            android:inputType="text"-->
+        <!--            android:hint="Job title"-->
+        <!--            android:focusedByDefault="true"-->
+        <!--            android:layout_marginHorizontal="20dp"-->
+        <!--            android:drawablePadding="12dp"-->
+        <!--            android:padding="15dp"-->
+        <!--            android:layout_marginBottom="20dp"-->
+        <!--            android:background="@drawable/edittext_back"/>-->
+
+
+    </LinearLayout>
+
+</ScrollView>

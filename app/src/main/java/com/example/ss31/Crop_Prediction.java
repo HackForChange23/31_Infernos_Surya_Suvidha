@@ -71,7 +71,7 @@ public class Crop_Prediction extends AppCompatActivity {
         tomato_fertilizer_calc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getBaseContext(), Fasal_Activity.class);
+                Intent i = new Intent(getBaseContext(), Fertilizer_Calculator.class);
                 startActivity(i);
             }
         });

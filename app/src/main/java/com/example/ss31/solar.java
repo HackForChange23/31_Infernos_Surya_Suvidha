@@ -131,8 +131,7 @@ public class solar extends Fragment {
         });*/
 
         Bundle bundle = getArguments();
-//        area = bundle.getInt("area", 50);
-        area = 100;
+        area = 40;
         Area = area;
 
 
@@ -195,7 +194,7 @@ public class solar extends Fragment {
         {
             lat = bundle.getString("latitude").substring(0,5);
             lon = bundle.getString("longitude").substring(0,5);
-            area = bundle.getInt("area");
+            //area = bundle.getInt("area");
             //Area = area;
             //area = area;
 

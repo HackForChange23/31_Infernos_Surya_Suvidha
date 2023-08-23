@@ -129,9 +129,14 @@ public class OpenFrame2 extends Fragment {
                 }
                 else if(nextbtn.getText().equals("Next"))
                 {
+                    Bundle b = new Bundle();
+                    b.putString("phone",name.getText().toString());
+                    b.putString("map","false");
+
                     //verifyCode(otp.getText().toString());
                     AppCompatActivity activity = (AppCompatActivity) v.getContext();
                     Fragment myFragment = new OpenFrame3();
+                    myFragment.setArguments(b);
                     activity.getSupportFragmentManager().beginTransaction().replace(R.id.openframe, myFragment).addToBackStack(null).commit();
 
                 }

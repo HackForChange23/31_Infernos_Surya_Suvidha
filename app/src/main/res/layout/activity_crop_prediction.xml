@@ -43,342 +43,81 @@
         </LinearLayout>
 
 
-        <LinearLayout
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/soilpH"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/soil_pH"
+            app:boxBackgroundColor="#1A5265FF"
+            android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:orientation="vertical">
+            android:layout_marginEnd="20dp">
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Fasal Name"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:textSize="17sp"/>
-            <EditText
-                android:id="@+id/fasal_name"
+            <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
-        </LinearLayout>
+                android:fontFamily="@font/poppins"
+                android:textSize="15dp" />
 
-        <LinearLayout
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nitrogen"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/nitrogen"
+            app:boxBackgroundColor="#1A5265FF"
+            android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:orientation="vertical">
+            android:layout_marginEnd="20dp">
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Fasal Type"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:textSize="17sp"/>
-            <EditText
-                android:id="@+id/fasal_type"
+            <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
-        </LinearLayout>
+                android:fontFamily="@font/poppins"
+                android:textSize="15dp" />
 
-        <LinearLayout
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phosphorus"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/phosphorus"
+            app:boxBackgroundColor="#1A5265FF"
+            android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:orientation="vertical">
+            android:layout_marginEnd="20dp">
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Temperature"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:textSize="17sp"/>
-            <EditText
-                android:id="@+id/temperature"
+            <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
-        </LinearLayout>
+                android:fontFamily="@font/poppins"
+                android:textSize="15dp" />
 
-        <LinearLayout
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/potassium"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/potassium"
+            app:boxBackgroundColor="#1A5265FF"
+            android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:orientation="vertical">
+            android:layout_marginEnd="20dp">
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Humidity"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:textSize="17sp"/>
-            <EditText
-                android:id="@+id/humidity"
+            <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
-        </LinearLayout>
+                android:fontFamily="@font/poppins"
+                android:textSize="15dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Soil pH"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:textSize="17sp"/>
-            <EditText
-                android:id="@+id/soilpH"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rainfall"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:textSize="17sp"/>
-            <EditText
-                android:id="@+id/rainfall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nitrogen"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:textSize="17sp"/>
-            <EditText
-                android:id="@+id/nitrogen"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Phosphorus"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:textSize="17sp"/>
-            <EditText
-                android:id="@+id/phosphorus"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Potassium"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:textSize="17sp"/>
-            <EditText
-                android:id="@+id/potassium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
-        </LinearLayout>
-
-
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:layout_below="@id/fasal_head"-->
-<!--            android:id="@+id/fasal_name"-->
-<!--            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="@string/fasal_name"-->
-<!--            app:boxBackgroundColor="#1A5265FF"-->
-<!--            android:layout_margin="20dp">-->
-
-<!--            <com.google.android.material.textfield.TextInputEditText-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:fontFamily="@font/poppins"-->
-<!--                android:textSize="15dp" />-->
-
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
-
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:id="@+id/fasal_type"-->
-<!--            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="@string/fasal_type"-->
-<!--            app:boxBackgroundColor="#1A5265FF"-->
-<!--            android:layout_marginHorizontal="20dp">-->
-
-<!--            <AutoCompleteTextView-->
-<!--                android:id="@+id/edittext_orgs"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:inputType="none"/>-->
-
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
-
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:id="@+id/temperature"-->
-<!--            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="@string/temperature"-->
-<!--            app:boxBackgroundColor="#1A5265FF"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:layout_marginStart="20dp"-->
-<!--            android:layout_marginEnd="20dp">-->
-
-<!--            <com.google.android.material.textfield.TextInputEditText-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:fontFamily="@font/poppins"-->
-<!--                android:textSize="15dp" />-->
-
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
-
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:id="@+id/humidity"-->
-<!--            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="@string/humidity"-->
-<!--            app:boxBackgroundColor="#1A5265FF"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:layout_marginStart="20dp"-->
-<!--            android:layout_marginEnd="20dp">-->
-
-<!--            <com.google.android.material.textfield.TextInputEditText-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:fontFamily="@font/poppins"-->
-<!--                android:textSize="15dp" />-->
-
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
-
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:id="@+id/soilpH"-->
-<!--            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="@string/soil_pH"-->
-<!--            app:boxBackgroundColor="#1A5265FF"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:layout_marginStart="20dp"-->
-<!--            android:layout_marginEnd="20dp">-->
-
-<!--            <com.google.android.material.textfield.TextInputEditText-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:fontFamily="@font/poppins"-->
-<!--                android:textSize="15dp" />-->
-
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
-
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:id="@+id/rainfall"-->
-<!--            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="@string/rainfall"-->
-<!--            app:boxBackgroundColor="#1A5265FF"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:layout_marginStart="20dp"-->
-<!--            android:layout_marginEnd="20dp">-->
-
-<!--            <com.google.android.material.textfield.TextInputEditText-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:fontFamily="@font/poppins"-->
-<!--                android:textSize="15dp" />-->
-
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
+        </com.google.android.material.textfield.TextInputLayout>
 
         <!--        <LinearLayout-->
         <!--            android:id="@+id/on_or_off"-->
@@ -617,6 +356,52 @@
 
         <!--        </com.google.android.material.textfield.TextInputLayout>-->
 
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Opt Solar"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/poppins"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="No" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RadioGroup>
+
         <androidx.cardview.widget.CardView
             android:layout_marginTop="10dp"
             android:id="@+id/submitbtn"
@@ -645,13 +430,6 @@
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:id="@+id/result"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text=""
-            android:gravity="center"
-            android:textSize="50sp"/>
         <!--        <EditText-->
         <!--            android:id="@+id/editText_gigname"-->
         <!--            android:layout_below="@id/gig"-->

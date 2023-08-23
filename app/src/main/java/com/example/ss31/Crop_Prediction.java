@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +18,8 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,9 +40,11 @@ import java.util.Map;
 
 public class Crop_Prediction extends AppCompatActivity {
 
-    EditText fasalname, fasaltype, temperature, humidity, soilpH, rainfall, nitrogen, phosphorus, potassium;
+    TextInputLayout temperature, humidity, soilpH, rainfall, nitrogen, phosphorus, potassium;
 
-    TextView result;
+    RadioGroup radioGroup;
+    RadioButton radioButtonYES;
+    RadioButton radioButtonNO;
     CardView submitbtn;
     ImageView backbtn;
     AutoCompleteTextView orgs;
@@ -51,6 +56,8 @@ public class Crop_Prediction extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crop_prediction);
 
+        radioButtonNO = findViewById(R.id.no);
+        radioButtonYES = findViewById(R.id.yes);
 //        orgs = findViewById(R.id.edittext_orgs);
 //        ArrayList<String> list = new ArrayList<>();
 //        list.add("Rabi");
@@ -72,21 +79,19 @@ public class Crop_Prediction extends AppCompatActivity {
             }
         });
 
-        fasalname = findViewById(R.id.fasal_name);
-        fasaltype = findViewById(R.id.fasal_type);
-        temperature = findViewById(R.id.temperature);
-        humidity = findViewById(R.id.humidity);
+//        temperature = findViewById(R.id.temperature);
+//        humidity = findViewById(R.id.humidity);
         soilpH = findViewById(R.id.soilpH);
-        rainfall = findViewById(R.id.rainfall);
+//        rainfall = findViewById(R.id.rainfall);
         nitrogen = findViewById(R.id.nitrogen);
         phosphorus = findViewById(R.id.phosphorus);
         potassium = findViewById(R.id.potassium);
-        result = findViewById(R.id.result);
         submitbtn = findViewById(R.id.submitbtn);
         submitbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 //                showDialog();
+
 
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                         new Response.Listener<String>() {
@@ -125,15 +130,14 @@ public class Crop_Prediction extends AppCompatActivity {
                     protected Map<String,String> getParams()
                     {
                         Map<String,String> map = new HashMap<String,String>();
-                        map.put("N","76");
-                        map.put("P","676");
-                        map.put("K","65");
-//                        map.put("temperature","45");
-//                        map.put("humidity","879");
-                        map.put("ph", "989");
-//                        map.put("rainfall", "654");
-//                        map.put("fasalname", fasalname.getText().toString());
-//                        map.put("fasaltype",fasaltype.getText().toString());
+                        map.put("N",nitrogen.getEditText().getText().toString().trim());
+                        map.put("P",phosphorus.getEditText().getText().toString().trim());
+                        map.put("K",potassium.getEditText().getText().toString().trim());
+                        map.put("temperature","89");
+                        map.put("humidity","65");
+                        map.put("ph", soilpH.getEditText().getText().toString().trim());
+                        map.put("rainfall", "89");
+
 
                         return map;
                     }
@@ -143,10 +147,6 @@ public class Crop_Prediction extends AppCompatActivity {
                 requestQueue.add(stringRequest);
             }
         });
-
-
-
-
 
 
     }
@@ -167,11 +167,56 @@ public class Crop_Prediction extends AppCompatActivity {
 
         if(result.equals("apple"))
         {
-            cropImage.setImageDrawable(ContextCompat.getDrawable(Crop_Prediction.this, R.drawable.tomato));
+            cropImage.setImageDrawable(ContextCompat.getDrawable(Crop_Prediction.this, R.drawable.apple));
         }
+        else if(result.equals("rice"))
+        {
+            cropImage.setImageDrawable(ContextCompat.getDrawable(Crop_Prediction.this, R.drawable.rice));
+        }
+
+        else if(result.equals("maize"))
+        {
+            cropImage.setImageDrawable(ContextCompat.getDrawable(Crop_Prediction.this, R.drawable.maize));
+        }
+
+        else if(result.equals("chickpea"))
+        {
+            cropImage.setImageDrawable(ContextCompat.getDrawable(Crop_Prediction.this, R.drawable.chickpea));
+        }
+
+        else if(result.equals("kidneybeans"))
+        {
+            cropImage.setImageDrawable(ContextCompat.getDrawable(Crop_Prediction.this, R.drawable.kidneybeans));
+        }
+
+        else if(result.equals("pigeonpeas"))
+        {
+            cropImage.setImageDrawable(ContextCompat.getDrawable(Crop_Prediction.this, R.drawable.pigeonpeas));
+        }
+
+        else if(result.equals("mothbeans"))
+        {
+            cropImage.setImageDrawable(ContextCompat.getDrawable(Crop_Prediction.this, R.drawable.mothbeans));
+        }
+
+        else if(result.equals("mango"))
+        {
+            cropImage.setImageDrawable(ContextCompat.getDrawable(Crop_Prediction.this, R.drawable.mango));
+        }
+
+        else if(result.equals("banana"))
+        {
+            cropImage.setImageDrawable(ContextCompat.getDrawable(Crop_Prediction.this, R.drawable.banana));
+        }
+
+        else if(result.equals("coconut"))
+        {
+            cropImage.setImageDrawable(ContextCompat.getDrawable(Crop_Prediction.this, R.drawable.coconut));
+        }
+
         else
         {
-
+            cropImage.setImageDrawable(ContextCompat.getDrawable(Crop_Prediction.this, R.drawable.maize));
         }
         tomato_fertilizer_calc.setOnClickListener(new View.OnClickListener() {
             @Override

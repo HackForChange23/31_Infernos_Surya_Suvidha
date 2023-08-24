@@ -52,4 +52,5 @@
     <string name="humidity">Humidity</string>
     <string name="rainfall">Rainfall</string>
     <string name="opt_solar">Opt Solar:</string>
+    <string name="join">Join Now</string>
 </resources>

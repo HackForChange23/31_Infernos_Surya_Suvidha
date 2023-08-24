@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/msg_bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/text_box1"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello my name is Mukti, how may I help you?"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:background="@drawable/backgound_msg_bot"
+            android:padding="12dp"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/arrow"
+            android:id="@+id/a1btn"
+            android:layout_weight="3"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/msg_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="3"
+            android:id="@+id/a2btn"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/text_box2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_msg_user"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="12dp"
+            android:text="Can you help me find nasha mukti events near me?"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

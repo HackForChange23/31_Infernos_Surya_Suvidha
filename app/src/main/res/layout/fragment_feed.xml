@@ -246,7 +246,7 @@
                                 android:textSize="12sp" />
                             <androidx.cardview.widget.CardView
                                 android:layout_width="130dp"
-                                android:layout_height="25dp"
+                                android:layout_height="30dp"
                                 android:background="#00FFFFFF"
                                 app:cardCornerRadius="10dp"
                                 app:cardElevation="2dp">

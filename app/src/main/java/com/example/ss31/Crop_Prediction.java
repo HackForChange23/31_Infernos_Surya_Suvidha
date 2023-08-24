@@ -42,9 +42,9 @@ public class Crop_Prediction extends AppCompatActivity {
 
     TextInputLayout temperature, humidity, soilpH, rainfall, nitrogen, phosphorus, potassium;
 
+    TextView textView;
     RadioGroup radioGroup;
-    RadioButton radioButtonYES;
-    RadioButton radioButtonNO;
+    RadioButton radioButton;
     CardView submitbtn;
     ImageView backbtn;
     AutoCompleteTextView orgs;
@@ -56,8 +56,9 @@ public class Crop_Prediction extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crop_prediction);
 
-        radioButtonNO = findViewById(R.id.no);
-        radioButtonYES = findViewById(R.id.yes);
+        radioGroup = findViewById(R.id.radioGroup);
+        textView = findViewById(R.id.radiotext);
+
 //        orgs = findViewById(R.id.edittext_orgs);
 //        ArrayList<String> list = new ArrayList<>();
 //        list.add("Rabi");
@@ -91,6 +92,10 @@ public class Crop_Prediction extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 //                showDialog();
+
+                int radioId = radioGroup.getCheckedRadioButtonId();
+                radioButton = findViewById(radioId);
+                textView.setText(radioButton.getText());
 
 
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
@@ -149,6 +154,12 @@ public class Crop_Prediction extends AppCompatActivity {
         });
 
 
+    }
+
+    private void checkbutton(View view) {
+        int radioId = radioGroup.getCheckedRadioButtonId();
+        radioButton = findViewById(radioId);
+        Toast.makeText(this, "selected"+radioButton.getText(), Toast.LENGTH_SHORT).show();
     }
 
     private void showDialog(String result)

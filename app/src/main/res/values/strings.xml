@@ -46,4 +46,5 @@
     <string name="temperature">Temperature</string>
     <string name="humidity">Humidity</string>
     <string name="rainfall">Rainfall</string>
+    <string name="opt_solar">Opt Solar:</string>
 </resources>

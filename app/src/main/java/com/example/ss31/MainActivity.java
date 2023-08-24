@@ -191,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        ImageView sendBtn = (ImageView) dialog_button.findViewById(R.id.sendbtn);
+        ImageView sendBtn = (ImageView) dlg.findViewById(R.id.sendbtn);
         sendBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

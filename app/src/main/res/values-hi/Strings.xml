@@ -48,4 +48,7 @@
     <string name="mssg3">ज़रूर!</string>
     <string name="mssg4">जैविक खेती एक प्रकार की खेती है जिसमें 0 प्रतिशत रसायनों का उपयोग होता है</string>
     <string name="mssg5">महान</string>
+    <string name="temperature">तापमान</string>
+    <string name="humidity">आर्द्रता</string>
+    <string name="rainfall">वर्षा</string>
 </resources>
